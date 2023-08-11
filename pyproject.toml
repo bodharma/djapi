@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "djapi"
+version = "0.1.0"
+description = ""
+authors = ["Bohdan Lesiv <boghdanlesiv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.2.4"
+djangorestframework = "^3.14.0"
+django-cors-headers = "^4.2.0"
+dj-database-url = "^2.0.0"
+gunicorn = "^21.2.0"
+whitenoise = "^6.5.0"
+django-environ = "^0.10.0"
+psycopg2-binary = "^2.9.7"
+pytest = "^7.4.0"
+pytest-django = "^4.5.2"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "djapi.settings"
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py", "tests.py"]
