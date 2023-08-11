@@ -23,7 +23,7 @@ poetry run python manage.py makemigrations
 poetry run python manage.py migrate
 ```
 
-## Test 
+## Test
 To run test you need to run postgres db in docker container or locally.
 
 ```shell
