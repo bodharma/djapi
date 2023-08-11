@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'djapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_HOST", "mydatabase"),
+        'NAME': os.environ.get("DB_DATABASE", "mydatabase"),
         'USER': os.environ.get("DB_USER", "myuser"),
         'PASSWORD': os.environ.get("DB_PASSWORD", "mypassword"),
         'HOST': os.environ.get("DB_HOST", "db"),
